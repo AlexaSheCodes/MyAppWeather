@@ -1,0 +1,122 @@
+body {
+  background-image: url(src/galaxy.jpg);
+}
+.center {
+  background: #172f4b;
+  box-shadow: 33px 26px 37px rgba(31, 121, 234, 0.2);
+  width: 100px;
+  height: 120px;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+p {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  display: block;
+  border: solid black;
+  border-radius: 20px;
+  padding: 30px 50px;
+  width: 800px;
+  margin: 10px auto;
+  background: #4c69a1;
+}
+h1 {
+  font-family: "Hurricane", cursive;
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  font-size: 100px;
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px3fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+h2 {
+  position: relative;
+  left: 50px;
+  top: 40px;
+  font-size: 90px;
+  color: #b4c0e6;
+  text-shadow: -3px 9px 10px rgba(34, 32, 53, 0.5);
+}
+h3 {
+  position: relative;
+  left: 180px;
+  top: -40px;
+  font-size: 40px;
+}
+
+.col {
+  color: #006ec5;
+
+  margin: 0 auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+.description {
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 4px;
+  position: relative;
+  left: 400px;
+  top: -120px;
+  color: white;
+}
+
+.city {
+  color: green;
+}
+input {
+  border-radius: 20px;
+  border: solid 2px;
+  padding: 5px;
+  color: black;
+  margin: 10px 5px;
+  box-shadow: 15px 7px 20px 3px rgba(34, 32, 53, 0.2);
+}
+div {
+  display: block;
+  margin: 0 auto;
+}
+
+#celsius-link {
+  color: black;
+}
+#fahrenheit-link {
+  color: black;
+}
+footer {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#temp-description {
+  text-transform: capitalize;
+}

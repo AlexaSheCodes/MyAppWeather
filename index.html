@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Lobster+Two:wght@700&family=Pacifico&family=Sansita+Swashed:wght@600&family=Smooch+Sans&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>☀️ AppWeather ⛈ </title>
+<link rel="stylesheet" href="src/style.css" />
+    </head>
+  <body><div class="container">
+    <form id="search-form">
+      <input type="text" placeholder="Enter your city" autocomplete="off" autofocus="on"id="search-text-input" />
+      <input type="submit" value="🔍 Search"  />
+      <input type="submit" id="pin"  value="📍Current">
+    </form >
+    <h1 id="h1">Athens</h1>
+   <h2 id="diffentTemp" > 25 </h2>
+   <h3> <a href="#"  id="celsius-link"> °C  </a>  |  <a href="#" id="fahrenheit-link"> °F   </a>
+</h3> 
+    <ul>
+      <li class="description" id="dayTime"></li>
+      <li class="description" id="temp-description">Sunny ☀️</li>
+      <li class="description" id="wind">Wind 20 km/h</li>
+      <li class="description" id="humidity">Humiduty 38%</li>
+    </ul>
+      <div class="row row-cols-5">
+        <div class="col">
+          <div class="center">
+            <p>
+              Sunday <br />
+              18 / <strong>11</strong> <br />☀️
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center">
+            <p>
+              Monday <br />
+              18 / <strong>11</strong> <br />⛅️
+            </p>
+          </div>
+        </div>
+        <div class="col"> 
+       <div class="center">
+            <p>
+              Tuesday <br />
+              18 / <strong>9</strong> <br />☀️
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center">
+            <p>
+              Wednesday <br />
+              19 / <strong>13</strong> <br />☁️
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center">
+            <p>
+              Thursday <br />
+              19 / <strong>15</strong> <br />☁️
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<footer> 👩‍💻 Coded by Alexandra Goilo</footer>
+ <script src="src/script.js"></script>
+  </body>
+</html>
