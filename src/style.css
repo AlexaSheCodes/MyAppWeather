@@ -1,10 +1,12 @@
-.day {
-  background-image: url(pics/sunny.jpg);
-  width: 100px;
-}
 .night {
   background-image: url(pics/galaxy.jpg);
 }
+
+.day {
+  background-image: url(pics/sunny.jpg);
+  width: 100;
+}
+
 .center {
   background: #172f4b;
   box-shadow: 33px 26px 37px rgba(31, 121, 234, 0.2);
