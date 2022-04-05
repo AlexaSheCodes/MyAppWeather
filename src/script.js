@@ -49,6 +49,7 @@ let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", convertToC);
 
 function showWeather(response) {
+  console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
   let temperature = Math.round(response.data.main.temp);
@@ -64,6 +65,11 @@ function showWeather(response) {
   let feels = Math.round(response.data.main.feels_like);
   let feelsLike = document.querySelector("#feels");
   feelsLike.innerHTML = `Feels like ${feels}° C`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    ` https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function showPosition(position) {
@@ -94,14 +100,3 @@ function showCity(event) {
 }
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
-
-setInterval(function () {
-  var d = new Date();
-  var n = d.getHours();
-  if (n > 20 || n < 6) {
-    document.body.className = "night";
-  } else {
-    document.body.className = "day";
-  }
-  console.log("test");
-}, 1000 * 60 * 60);
