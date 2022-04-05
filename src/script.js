@@ -92,3 +92,16 @@ function showCity(event) {
 }
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
+
+var currentTime = new Date();
+var hours = currentTime.getHours();
+
+if (hours > 6 && hours <= 10) {
+  document.body.style.backgroundImage = "url('sunrise.jpg')";
+} else if (hours > 10 && hours <= 17) {
+  document.body.style.backgroundImage = "url('day.jpg')";
+} else if (hours > 17 && hours <= 19) {
+  document.body.style.backgroundImage = "url('sunset.jpg')";
+} else {
+  document.body.style.backgroundImage = "url('night.jpg')";
+}
