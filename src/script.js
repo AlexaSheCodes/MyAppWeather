@@ -62,6 +62,9 @@ function showWeather(response) {
   let wind = Math.round(response.data.wind.speed);
   let windSigh = document.querySelector("#wind");
   windSigh.innerHTML = `Wind ${wind} km/h`;
+  let feels = Math.round(response.data.main.feels_like);
+  let feelsLike = document.querySelector("#feels");
+  feelsLike.innerHTML = `Feels like ${feels}° C`;
 }
 
 function showPosition(position) {
