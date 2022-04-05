@@ -49,7 +49,6 @@ let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", convertToC);
 
 function showWeather(response) {
-  console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
   let temperature = Math.round(response.data.main.temp);
