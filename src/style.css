@@ -1,8 +1,4 @@
-.day {
-  background-image: url(pics/sunny.jpg);
-  width: 100%;
-}
-.night {
+body {
   background-image: url(pics/galaxy.jpg);
 }
 
