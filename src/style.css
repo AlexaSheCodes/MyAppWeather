@@ -1,4 +1,7 @@
-body {
+.day {
+  background-image: url(pics/sunny.jpg);
+}
+.night {
   background-image: url(pics/galaxy.jpg);
 }
 .center {
