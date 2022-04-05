@@ -31,7 +31,7 @@ h1 {
   font-family: "Lobster", cursive;
   font-family: "Lobster Two", cursive;
   position: relative;
-  left: 30px;
+  left: 20px;
   top: 20px;
   font-size: 100px;
   animation: flicker 1.5s infinite alternate;
@@ -64,7 +64,7 @@ h2 {
 }
 h3 {
   position: relative;
-  left: 180px;
+  left: 200px;
   top: -40px;
   font-size: 40px;
 }

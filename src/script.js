@@ -65,12 +65,7 @@ function showWeather(response) {
   let feels = Math.round(response.data.main.feels_like);
   let feelsLike = document.querySelector("#feels");
   feelsLike.innerHTML = `Feels like ${feels}° C`;
-  let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    ` https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-}
+
 
 function showPosition(position) {
   let apiKey = "959f16f94f43568286f7341b3d6b31a5";
@@ -99,4 +94,4 @@ function showCity(event) {
   searchCity(city);
 }
 let searchForm = document.querySelector("form");
-searchForm.addEventListener("submit", showCity);
+searchForm.addEventListener("submit", showCity)
