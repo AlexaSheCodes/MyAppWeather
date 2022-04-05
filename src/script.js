@@ -98,7 +98,7 @@ searchForm.addEventListener("submit", showCity);
 setInterval(function () {
   var d = new Date();
   var n = d.getHours();
-  if (n > 23 || n < 6) {
+  if (n > 20 || n < 6) {
     document.body.className = "night";
   } else {
     document.body.className = "day";
