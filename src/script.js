@@ -94,4 +94,6 @@ function showCity(event) {
   searchCity(city);
 }
 let searchForm = document.querySelector("form");
-searchForm.addEventListener("submit", showCity)
+searchForm.addEventListener("submit", showCity);
+
+
