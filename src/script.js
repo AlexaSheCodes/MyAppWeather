@@ -53,7 +53,7 @@ function showWeather(response) {
   console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
-  let temperature = Math.round(celsiusTemperature);
+  let temperature = Math.round(response.data.main.temp);
   let temperatureSign = document.querySelector("#diffentTemp");
   temperatureSign.innerHTML = `${temperature}`;
   let description = document.querySelector("#temp-description");
