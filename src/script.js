@@ -98,7 +98,7 @@ function searchCity(city) {
 
 function showCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-text-input").value;
+  let city = document.querySelector("#search-text-input");
   searchCity(city.value);
 }
 let searchForm = document.querySelector("form");
