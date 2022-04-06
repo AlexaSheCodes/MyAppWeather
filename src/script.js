@@ -104,4 +104,4 @@ function showCity(event) {
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
 
-searchCity("New York");
+searchCity("Los Angeles");

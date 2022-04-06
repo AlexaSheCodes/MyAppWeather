@@ -112,9 +112,11 @@ div {
 
 #celsius-link {
   color: black;
+  text-decoration: none;
 }
 #fahrenheit-link {
   color: black;
+  text-decoration: none;
 }
 footer {
   color: #fff;
