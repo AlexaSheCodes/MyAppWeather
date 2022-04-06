@@ -65,7 +65,7 @@ function showWeather(response) {
   let feels = Math.round(response.data.main.feels_like);
   let feelsLike = document.querySelector("#feels");
   feelsLike.innerHTML = `Feels like ${feels}° C`;
-
+}
 
 function showPosition(position) {
   let apiKey = "959f16f94f43568286f7341b3d6b31a5";
@@ -91,7 +91,9 @@ function searchCity(city) {
 function showCity(event) {
   event.preventDefault();
   let city = document.querySelector("#search-text-input").value;
-  searchCity(city);
+  searchCity(city.value);
 }
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
+
+searchCity("New York");
