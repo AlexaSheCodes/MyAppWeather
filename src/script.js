@@ -34,17 +34,18 @@ currentDate.innerHTML = formatDate(now);
 
 function convertToF(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#diffentTemp");
-  temperatureElement.innerHTML = 77;
+  let temperatureSign = document.querySelector("#diffentTemp");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  temperatureSign.innerHTML = Math.round(fahrenheitTemp);
 }
 function convertToC(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#diffentTemp");
-  temperatureElement.innerHTML = 25;
+  let temperatureSign = document.querySelector("#diffentTemp");
+  temperatureSign.innerHTML = Math.round(celsiusTemperature);
 }
-
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", convertToF);
+let celsiusTemperature = null;
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToF);
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", convertToC);
 
@@ -52,7 +53,7 @@ function showWeather(response) {
   console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = Math.round(celsiusTemperature);
   let temperatureSign = document.querySelector("#diffentTemp");
   temperatureSign.innerHTML = `${temperature}`;
   let description = document.querySelector("#temp-description");
@@ -71,6 +72,7 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  celsiusTemperature = response.data.main.temp;
 }
 
 function showPosition(position) {
