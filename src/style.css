@@ -10,7 +10,7 @@ img {
   background: #172f4b;
   box-shadow: 33px 26px 37px rgba(31, 121, 234, 0.2);
   width: 100px;
-  height: 120px;
+  height: 130px;
   border-radius: 30%;
   display: flex;
   align-items: center;
@@ -76,8 +76,9 @@ h3 {
 
 .col {
   color: #9eb4e3;
-  margin: 0 auto;
-  display: block;
+  position: relative;
+  left: 0px;
+  top: -70px;
 }
 
 ul {
@@ -127,4 +128,12 @@ footer {
 }
 #temp-description {
   text-transform: capitalize;
+}
+p {
+  text-align: center;
+}
+#icons {
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
