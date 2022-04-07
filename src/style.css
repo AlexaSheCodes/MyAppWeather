@@ -18,8 +18,7 @@ img {
 }
 p {
   text-align: center;
-  display: block;
-  margin: 0 auto;
+  font-size: 18px;
 }
 .container {
   display: block;
@@ -75,7 +74,6 @@ h3 {
 
 .col {
   color: #006ec5;
-
   margin: 0 auto;
   display: block;
 }
@@ -127,4 +125,8 @@ footer {
 }
 #temp-description {
   text-transform: capitalize;
+}
+.icons {
+  display: block;
+  margin: 0 auto;
 }
