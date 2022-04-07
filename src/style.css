@@ -19,6 +19,8 @@ img {
 p {
   text-align: center;
   font-size: 18px;
+  display: block;
+  margin: 0 auto;
 }
 .container {
   display: block;
@@ -125,8 +127,4 @@ footer {
 }
 #temp-description {
   text-transform: capitalize;
-}
-.icons {
-  display: block;
-  margin: 0 auto;
 }
