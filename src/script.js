@@ -32,9 +32,9 @@ let now = new Date();
 let currentDate = document.querySelector("#dayTime");
 currentDate.innerHTML = formatDate(now);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-
   let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
@@ -59,7 +59,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "959f16f94f43568286f7341b3d6b31a5";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 
+  axios.get(apiUrl).then(displayForecast);
+}
 function convertToF(event) {
   event.preventDefault();
   let temperatureSign = document.querySelector("#diffentTemp");
@@ -102,6 +108,8 @@ function showWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function showPosition(position) {
@@ -134,4 +142,3 @@ let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
 
 searchCity("Mykonos");
-displayForecast();
