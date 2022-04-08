@@ -38,7 +38,7 @@ function formatDay(timestamp) {
   let days = [
     "Sunday",
     "Monday",
-    "Tueasday",
+    "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
