@@ -9,8 +9,8 @@ body {
 .center {
   background: #172f4b;
   box-shadow: 33px 26px 37px rgba(31, 121, 234, 0.2);
-  width: 100px;
-  height: 130px;
+  width: 115px;
+  height: 135px;
   border-radius: 30%;
 
   align-items: center;
@@ -27,7 +27,7 @@ p {
   border: solid black;
   border-radius: 20px;
   padding: 10px 50px;
-  width: 700px;
+  width: 800px;
   margin: 10px auto;
   background: #4c69a1;
   align-items: center;
