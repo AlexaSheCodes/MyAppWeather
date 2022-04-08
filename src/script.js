@@ -32,6 +32,34 @@ let now = new Date();
 let currentDate = document.querySelector("#dayTime");
 currentDate.innerHTML = formatDate(now);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+ <div class="col-2">
+          <div class="center">
+            
+            <p>
+              <img id="icons" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="80">
+              ${day} <br />
+             <span class="weather-forecast-temperature-max"> <strong>18</strong> </span>/<span class="weather-forecast-temperature-min"> 11 </span><br />
+            </p>
+          </div>
+        </div>
+  
+   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function convertToF(event) {
   event.preventDefault();
   let temperatureSign = document.querySelector("#diffentTemp");
@@ -44,6 +72,7 @@ function convertToC(event) {
   temperatureSign.innerHTML = Math.round(celsiusTemperature);
 }
 let celsiusTemperature = null;
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToF);
 let celsius = document.querySelector("#celsius-link");
@@ -105,3 +134,4 @@ let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", showCity);
 
 searchCity("Mykonos");
+displayForecast();

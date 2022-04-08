@@ -74,11 +74,8 @@ h3 {
   font-size: 30px;
 }
 
-.col {
+.col-2 {
   color: #9eb4e3;
-  position: relative;
-  left: 0px;
-  top: -70px;
 }
 
 ul {
