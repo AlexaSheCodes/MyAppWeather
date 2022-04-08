@@ -1,7 +1,7 @@
 body {
   background-image: url(pics/galaxy.jpg);
 }
-img {
+#icon {
   position: relative;
   left: -20px;
   top: 30px;
@@ -30,6 +30,7 @@ p {
   width: 700px;
   margin: 10px auto;
   background: #4c69a1;
+  align-items: center;
 }
 h1 {
   font-family: "Hurricane", cursive;
@@ -76,6 +77,7 @@ h3 {
 
 .col-2 {
   color: #9eb4e3;
+  text-align: center;
 }
 
 ul {
@@ -131,6 +133,6 @@ p {
 }
 #icons {
   position: relative;
-  left: 0px;
-  top: 0px;
+  left: -30px;
+  top: -20px;
 }
